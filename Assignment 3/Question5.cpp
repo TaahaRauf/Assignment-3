@@ -16,7 +16,7 @@
 //	for (int i = 1; i < n; i++) {
 //		factorial1 = factorial1  * (n - i);
 //	}
-//	factorial1 = factorial2 * (n-r);
+//	factorial2 = factorial2 * (n-r);
 //	for (int i = 1; i < (n-r); i++) {
 //		factorial2 = factorial2 * ((n-r) - i);
 //	}
