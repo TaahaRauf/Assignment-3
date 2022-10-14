@@ -21,7 +21,7 @@ int main()
 		// turn = 1 means that currently it is computer's turn
 		// turn = 0 means that currently it is human's turn
 		if (difficulty == 0) {
-			cout << "Computer is playing smartly " << endl;
+			cout << "Computer is playing stupidly " << endl;
 			while (initial != 1) {
 				cout << "The number of marbles left are " << initial << endl;
 				compMarbles = 1 + rand() % ((initial / 2)+1);
@@ -29,10 +29,10 @@ int main()
 				initial = initial - compMarbles;
 				cout << "The number of marbles left are " << initial << endl;
 				cout << "Human turn now : Enter number of marbles you wanna take " << endl;
+				turn = 0;
 				if (initial == 1) {
 					break;
 				}
-				turn = 0;
 				cin >> HumanMarbles;
 				while (HumanMarbles > (initial / 2) || HumanMarbles == 0) {
 					cout << "Please make a valid move " << endl;
@@ -79,10 +79,10 @@ int main()
 				initial = initial - compMarbles;
 				cout << "The number of marbles left are " << initial << endl;
 				cout << "Human turn now : Enter number of marbles you wanna take " << endl;
+				turn = 0;
 				if (initial == 1) {
 					break;
 				}
-				turn = 0;
 				cin >> HumanMarbles;
 				while (HumanMarbles > (initial / 2) || HumanMarbles == 0) {
 					cout << "Please make a valid move " << endl;
@@ -108,7 +108,7 @@ int main()
 		// turn = 1 means that currently it is computer's turn
 		// turn = 0 means that currently it is human's turn
 		if (difficulty == 0) {
-			cout << "Computer is playing smartly " << endl;
+			cout << "Computer is playing stupidly " << endl;
 			while (initial != 1) {
 
 				cout << "The number of marbles left are " << initial << endl;
@@ -119,15 +119,15 @@ int main()
 					cin >> HumanMarbles;
 				}
 				initial = initial - HumanMarbles;
+				cout << "Computer's turn now ";
+				turn = 1;
 				if (initial == 1) {
 					break;
 				}
-				turn = 1;
 				cout << "The number of marbles left are " << initial << endl;
 				compMarbles = 1 + rand() % ((initial / 2)+1);
 				cout << "The computer took " << compMarbles << endl;
 				initial = initial - compMarbles;
-				
 				turn = 0;
 				cout << "Human's turn  now " << endl;
 
@@ -150,11 +150,13 @@ int main()
 					cin >> HumanMarbles;
 				}
 				initial = initial - HumanMarbles;
+				cout << "Computer's turn  now " << endl;
+				turn = 1;
 				if (initial == 1) {
 					break;
 				}
-				turn = 1;
-				cout << "Computer's turn  now " << endl;
+	
+				
 				cout << "The number of marbles left are " << initial << endl;
 				for (i = (initial / 2); i >= 1; i--) {
 
