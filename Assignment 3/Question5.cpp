@@ -84,6 +84,7 @@
 //		cout << "Enter r " << endl;
 //		cin >> r;
 //		result = combination(n,r);
+//		cout << result;
 //
 //	}
 //	if (input == 4) {
@@ -92,6 +93,7 @@
 //		cout << "Enter r " << endl;
 //		cin >> r;
 //		result = combination2(n, r);
+//		cout << result;
 //	}
 //	if (input == 5) {
 //		
